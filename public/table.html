@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Header Styles */
+    h1 {
+      color: #663399;
+      text-align: center;
+      margin: 20px 0;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 12px;
+      background-color: #f9f9f9;
+    }
+
+    th {
+      background-color: #f5f5f5;
+    }
+
+    /* Bottom Section Styles */
+    .bottom-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .bottom-section p {
+      padding: 6px;
+      margin: 3px;
+      font-size: 10px;
+      text-align: center;
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Additional Styling */
+    .divider {
+      height: 1px;
+      background-color: #ddd;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Melissa Kids</h1>
+    <table>
+      <tr>
+        <th>Mahsulot nomi</th>
+        <th>Mahsulot kodi</th>
+        <th>Ombor</th>
+        <th>Valyuta</th>
+        <th>Mahsulot soni</th>
+        <th>Mahsulot narxi</th>
+        <th>Umumiy summa</th>
+      </tr>
+      {{#data}}
+      <tr>
+        <td>{{product_name}}</td>
+        <td>{{product_code}}</td>
+        <td>{{stock}}</td>
+        <td>{{currency}}</td>
+        <td>{{quantity}}</td>
+        <td>{{price}}</td>
+        <td>{{total_amount}}</td>
+      </tr>
+      {{/data}}
+    </table>
+
+    <p class="divider"></p>
+    <p class="total-amount">Umumiy summa: {{total_amount_sum}}</p>
+    <div class="divider"></div>
+
+    <div class="bottom-section">
+      <!-- <div class="divider"></div> -->
+      <p class="client-info">Nomer: {{client_number}}</p>
+      <p class="client-info">Ism: {{client_name}}</p>
+      <p class="divider"></p>
+      <p class="contact-links">
+        Telegram: <a href="{{telegram_link}}" target="_blank">{{telegram_link}}</a>
+        Instagram: <a href="{{instagram_link}}" target="_blank">{{instagram_link}}</a>
+      </p>
+      <!-- <p class="divider"></p> -->
+      <p class="contact-links">
+        Dasturchi nomeri: {{developer_number}}
+        Dasturchi link: {{developer_link}}
+      </p>
+
+
+    </div>
+  </div>
+</body>
+
+</html>

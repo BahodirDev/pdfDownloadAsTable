@@ -1,0 +1,59 @@
+styles.css
+
+/* Styling for header */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: blueviolet;
+  }
+  
+  /* Styling for table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* Styling for table header */
+  th {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
+  /* Styling for even rows */
+  tr:nth-child(even) td {
+    background-color: red;
+    color: white;
+  }
+  
+  /* Styling for footer */
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Styling for contact links */
+  .contact-info a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  .h3{
+    color: red;
+  }
